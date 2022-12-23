@@ -31,7 +31,7 @@ const Navbar = () => {
             </div> :   ''}
             
             <div className={nav ? 'fixed top-0 right-0 w-[300px] h-screen bg-white z-10 duration-400' 
-                            : 'fixed top-0 right-[-100%] w-[300px] h-screen bg-white z-10 duration-400 '}>
+                            : 'fixed top-0 right-[-100%] w-[300px] h-screen bg-white z-10 duration-300 '}>
                 <AiOutlineClose size={30} className='absolute right-4 top-4 cursor-pointer' onClick={()=> setNavBar(!nav)} />
                 <h2 className="text-2xl p-4">
                     PestWerx
