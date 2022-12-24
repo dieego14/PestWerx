@@ -1,25 +1,19 @@
 import React from "react";
 import { BsStar } from "react-icons/bs";
 import { MdOutlineInventory2, MdOutlineLocationOn } from "react-icons/md";
-
 const Adv = () => {
   return (
-    <div className="max-w-[1920px] mx-auto p-4 py-12 bg-red-200">
-      <div className="max-h-[600px]">
+    <div className="max-w-[1920px] mx-auto p-4 py-12 bg-myColor">
+      <div className="max-h-[640px]">
         <div>
           <h1 className="text-4xl sm:text-5xl font-myFont text-center">
             Unwelcome visitors in your home?
           </h1>
-          <div className="py-2 font-unbounded text-xl">
-            <p className="sm:text-xl">
+          <div className="font-unbounded text-lg sm:text-xl md:text-2xl md:p-5 py-5 gap-3 text-center md:flex">
+            <p className="sm:py-2">
               Serving the Los Angeles area with over 15 years of experience in
-              the pest control industry.
-            </p>
-            <p className=" sm:text-xl py-2">
-              We operate and manage solutions to all pest control problems.
-            </p>
-            <p className=" sm:text-xl">
-              We treat and defend homes and businesses from unwanted visitors.
+              the pest control industry. We operate and manage solutions for all pest control problems.
+              We treat & defend homes and businesses from unwanted pests.
             </p>
           </div>
         </div>
@@ -32,7 +26,7 @@ const Adv = () => {
             </div>
             <div className="flex justify-center sm:text-2xl py-2 font-bold">
               {/* Description */}
-              <p className="text-center">5 Star Service <span className="text-red-600 font-extrabold">Guaranteed</span></p>
+              <p className="text-center">5 Star Service <span className="">Guaranteed</span></p>
             </div>
           </div>
           {/* Second Card */}
