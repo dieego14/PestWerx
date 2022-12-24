@@ -12,7 +12,9 @@ const Navbar = () => {
   return (
     <div className="max-w-[1920px] mx-auto flex justify-between border-b-2 border-gray-600">
       <div className="flex items-center gap-10 py-6">
-        <h1 className="text-3xl sm:text-3xl lg:text-5xl ml-7"><Link to="/">Pestwerx 🪲</Link></h1>
+        <h1 className="text-3xl sm:text-3xl lg:text-5xl ml-7">
+          <Link to="/">Pestwerx 🪲</Link>
+        </h1>
         <div className="hidden text-xl sm:flex lg:text-xl gap-5 mt-1 cursor-pointer">
           <button>
             <Link to="/About">About us</Link>
@@ -42,7 +44,7 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "fixed top-0 right-0 w-[300px] h-screen bg-white z-10 duration-400"
+            ? "fixed top-0 right-0 w-[300px] h-screen bg-white z-10 duration-300"
             : "fixed top-0 right-[-100%] w-[300px] h-screen bg-white z-10 duration-300 "
         }
       >
@@ -56,19 +58,19 @@ const Navbar = () => {
           <ul className="flex flex-col p-8 text-gray-800">
             <li className="text-xl py-8 flex ml-8">
               <FiUsers size={30} className="mr-5" />
-              About Us
+              <Link to="/About">About Us</Link>
             </li>
             <li className="text-xl py-8 flex ml-8">
               <MdOutlineCleaningServices size={30} className="mr-5" />
-              Services
+              <Link to="/Services">Services</Link>
             </li>
             <li className="text-xl py-8 flex ml-8">
               <GrContact size={30} className="mr-5" />
-              Contact Us
+              <Link to="/Contact">Contact Us</Link>
             </li>
             <li className="text-xl py-8 flex ml-8">
               <GoLocation size={30} className="mr-5" />
-              Locations
+              <Link to="/Locations">Locations</Link>
             </li>
           </ul>
         </nav>
