@@ -4,21 +4,21 @@ import { MdOutlineInventory2, MdOutlineLocationOn } from "react-icons/md";
 
 const Adv = () => {
   return (
-    <div className="max-w-[1920px] mx-auto p-4 py-12 bg-blue-200">
+    <div className="max-w-[1920px] mx-auto p-4 py-12 bg-red-200">
       <div className="max-h-[600px]">
         <div>
           <h1 className="text-4xl sm:text-5xl font-myFont text-center">
             Unwelcome visitors in your home?
           </h1>
-          <div className="py-2 font-Vollkorn">
-            <p className="text-lg sm:text-xl text-center">
+          <div className="py-2 font-unbounded text-xl">
+            <p className="sm:text-xl">
               Serving the Los Angeles area with over 15 years of experience in
               the pest control industry.
             </p>
-            <p className="text-lg sm:text-xl text-center py-2 nnn">
+            <p className=" sm:text-xl py-2">
               We operate and manage solutions to all pest control problems.
             </p>
-            <p className="text-lg sm:text-xl text-center">
+            <p className=" sm:text-xl">
               We treat and defend homes and businesses from unwanted visitors.
             </p>
           </div>
