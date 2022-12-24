@@ -16,7 +16,7 @@ const Footer = ()=>{
                         18565 SOLEDAD CANYON ROAD #352 CANYON COUNTRY, CA. 91351
                     </p>
                     <p>
-                        (800)283-8290
+                        (800)-283-8290
                     </p>
                     <p className=" text-xs">
                         COPYRIGHT © 2022 PESTWERX - ALL RIGHTS RESERVED.
