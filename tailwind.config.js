@@ -9,6 +9,8 @@ module.exports = {
         myFont: ['Bebas Neue'],
         Vollkorn: ['Vollkorn'],
         raleway: ['Raleway'],
+        mukta: ['Mukta'],
+        unbounded: ['Unbounded']
       },
     },
   },
