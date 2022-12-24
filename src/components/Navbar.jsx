@@ -16,7 +16,7 @@ const Navbar = () => {
           <Link to="/">Pestwerx 🪲</Link>
         </h1>
         <div className="hidden text-xl sm:flex lg:text-xl gap-5 mt-1 cursor-pointer">
-          <button>
+          <button className="hover:animate-bounce">
             <Link to="/About">About us</Link>
           </button>
           <button>
@@ -58,19 +58,27 @@ const Navbar = () => {
           <ul className="flex flex-col p-8 text-gray-800">
             <li className="text-xl py-8 flex ml-8">
               <FiUsers size={30} className="mr-5" />
-              <Link to="/About">About Us</Link>
+              <button onClick={() => setNavBar(!nav)}>
+                <Link to="/About">About Us</Link>
+              </button>
             </li>
             <li className="text-xl py-8 flex ml-8">
               <MdOutlineCleaningServices size={30} className="mr-5" />
-              <Link to="/Services">Services</Link>
+              <button onClick={() => setNavBar(!nav)}>
+                <Link to="/Services">Services</Link>
+              </button>
             </li>
             <li className="text-xl py-8 flex ml-8">
               <GrContact size={30} className="mr-5" />
-              <Link to="/Contact">Contact Us</Link>
+              <button onClick={() => setNavBar(!nav)}>
+                <Link to="/Contact">Contact Us</Link>
+              </button>
             </li>
             <li className="text-xl py-8 flex ml-8">
               <GoLocation size={30} className="mr-5" />
-              <Link to="/Locations">Locations</Link>
+              <button onClick={() => setNavBar(!nav)}>
+                <Link to="/Locations">Locations</Link>
+              </button>
             </li>
           </ul>
         </nav>
