@@ -12,6 +12,9 @@ module.exports = {
         mukta: ['Mukta'],
         unbounded: ['Unbounded']
       },
+      colors:{
+        myColor: '#efeff0',
+      }
     },
   },
   plugins: [],
