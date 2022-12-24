@@ -10,13 +10,13 @@ import About from "../Routes/About";
 const Navbar = () => {
   const [nav, setNavBar] = useState(false);
   return (
-    <div className="max-w-[1920px] mx-auto flex justify-between border-b-2 border-gray-600">
+    <div className="max-w-[1920px] bg-myColor mx-auto flex justify-between border-b-2 border-gray-600">
       <div className="flex items-center gap-10 py-6">
         <h1 className="text-3xl sm:text-3xl lg:text-5xl ml-7">
           <Link to="/">Pestwerx 🪲</Link>
         </h1>
-        <div className="hidden text-xl sm:flex lg:text-xl gap-5 mt-1 cursor-pointer">
-          <button className="hover:animate-bounce">
+        <div className="hidden text-xl sm:flex lg:text-xl gap-7 mt-1 cursor-pointer">
+          <button className="hover:animate-pulse">
             <Link to="/About">About us</Link>
           </button>
           <button>
