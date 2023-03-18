@@ -1,11 +1,11 @@
 import React from "react";
-import {BsFillTelephoneFill} from 'react-icons/bs'
-import {FiPhoneCall} from 'react-icons/fi'
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { FiPhoneCall } from "react-icons/fi";
 
 const Contact = () => {
   return (
     <div className="max-w-[1920px] bg-myColor ">
-      <div className="max-h-[800px]">
+      <div className="max-h-[5000px]">
         <div className="bg-black/80 h-[200px]">
           <h1 className="text-white font-myFont text-5xl flex justify-center py-[80px]">
             CUSTOMER CARE
@@ -13,24 +13,49 @@ const Contact = () => {
         </div>
         <div className="h-[600px] grid grid-cols-2">
           <div className="px-12">
-            <h1 className="font-myFont text-5xl mt-12 mb-4">
-              Contact us
-            </h1>
+            <h1 className="font-myFont text-5xl mt-12 mb-4">Contact us</h1>
             <p className=" mr-8 font-unbounded">
-              Want to schedule a visit? Got questions?
-              Or want an estimate? We'd like to hear from you!
+              Want to schedule a visit? Got questions? Or want an estimate? We'd
+              like to hear from you!
             </p>
             <div className="flex py-8 text-xl">
               <FiPhoneCall size={30} />
               <p className="ml-4 font-raleway">
-                CALL US <button className=" bg- underline underline-offset-4 hover:invisible font-mukta ml-1 py-[-1px]">(800)-283-8290</button>
+                CALL US{" "}
+                <button className=" bg- underline underline-offset-4 hover:font-bold font-mukta ml-1 py-[-1px]">
+                  <a href="tel:2133729844">(213)-372-9844 </a>
+                </button>
               </p>
             </div>
           </div>
-          <div>
-            <h1>
-              Form
+          {/* Contact Form */}
+          <div className="">
+            <h1 className="font-myFont text-5xl mt-11 mb-4">
+              Schedule a Visit
             </h1>
+            <div>
+              <h3> Name </h3>
+              <input type="text" className="mb-3 w-[170px] md:w-[270px] lg:w-[470px]"></input>
+
+              <h3> Email </h3>
+              <input type="text" className="mb-3 w-[170px] md:w-[270px] lg:w-[470px]"></input>
+
+              <h3> Address </h3>
+              <input type="text" className="mb-3 w-[170px] md:w-[270px] lg:w-[470px]"></input>
+
+              <h3> Phone Number </h3>
+              <input type="tel" className="mb-3 w-[170px] md:w-[270px] lg:w-[470px] "></input>
+
+              <h3>Additional Comments </h3>
+              <textarea className="mb-4 w-[270px]"></textarea>
+
+            </div>
+            {/* Submit Button */}
+            <div>
+              <button className="px-4 rounded-full bg-slate-100 border border-slate-600 hover:text-white hover:bg-slate-700 active:bg-black active:ring-2 active:ring-slate-300">
+                Submit
+              </button>
+            </div>
           </div>
         </div>
       </div>
