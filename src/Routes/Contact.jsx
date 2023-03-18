@@ -34,28 +34,32 @@ const Contact = () => {
               Schedule a Visit
             </h1>
             <div>
+              <form action="https://formsubmit.co/cihit85959@galcake.com" method="POST">
+              <input type="hidden" name="_subject" value="Customer Request"></input>
+              <input type="hidden" name="_captcha" value="false"></input>
               <h3> Name </h3>
-              <input type="text" className="mb-3 w-[170px] md:w-[270px] lg:w-[470px]"></input>
+              <input type="text" className="mb-3 w-[170px] md:w-[270px] lg:w-[470px]" name="Name"></input>
 
               <h3> Email </h3>
-              <input type="text" className="mb-3 w-[170px] md:w-[270px] lg:w-[470px]"></input>
+              <input type="text" className="mb-3 w-[170px] md:w-[270px] lg:w-[470px]" name="Email"></input>
 
               <h3> Address </h3>
-              <input type="text" className="mb-3 w-[170px] md:w-[270px] lg:w-[470px]"></input>
+              <input type="text" className="mb-3 w-[170px] md:w-[270px] lg:w-[470px]" name="Address"></input>
 
               <h3> Phone Number </h3>
-              <input type="tel" className="mb-3 w-[170px] md:w-[270px] lg:w-[470px] "></input>
+              <input type="tel" className="mb-3 w-[170px] md:w-[270px] lg:w-[470px]" name="Phone Number"></input>
 
               <h3>Additional Comments </h3>
-              <textarea className="mb-4 w-[270px]"></textarea>
-
-            </div>
-            {/* Submit Button */}
-            <div>
+              <textarea className="mb-4 w-[270px]" name="Comments"></textarea>
+              <div>
               <button className="px-4 rounded-full bg-slate-100 border border-slate-600 hover:text-white hover:bg-slate-700 active:bg-black active:ring-2 active:ring-slate-300">
                 Submit
               </button>
             </div>
+              </form>
+            </div>
+            {/* Submit Button */}
+            
           </div>
         </div>
       </div>
