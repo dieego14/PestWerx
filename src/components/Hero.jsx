@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -16,11 +17,14 @@ const Hero = () => {
             Providing thorough and professional expertise for all your home pest
             control needs!
           </h2>
+          {/* Contact Us Button */}
+          <Link to="/Contact"> 
           <div className=" h-11 px-4 py-3 sm:h-20 sm:px-4 sm:py-8">
             <button className="bg-gray-700 rounded-lg px-2 py-2 sm:px-4 sm:py-4 hover:bg-red-500 active:bg-red-700 active:duration-100">
               Contact us
             </button>
           </div>
+          </Link>
         </div>
         <img
           className="w-full max-h-[500px] object-cover "
