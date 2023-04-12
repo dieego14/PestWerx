@@ -36,6 +36,7 @@ const Contact = () => {
             <div>
               <form action="https://formsubmit.co/cihit85959@galcake.com" method="POST">
               <input type="hidden" name="_subject" value="Customer Request"></input>
+              <input type="hidden" name="_next" value="http://localhost:3000/Contact"></input>
               <input type="hidden" name="_captcha" value="false"></input>
               <h3> Name </h3>
               <input type="text" className="mb-3 w-[170px] md:w-[270px] lg:w-[470px]" name="Name"></input>
